@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Calculator</title>
+    <style>
+        .show-here{
+            height:50px;
+            margin-bottom:20px;
+            font-size: 20px;
+            padding:10px;
+        }
+        .form-control:focus,
+        .btn:focus{
+            box-shadow:none;
+            outline:none;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="main-body py-5">
+                        <h5 class="text-center py-2">Calculator</h5>
+                        <div class="">
+                            <input class="form-control show-here" type="text" id="showhe" readonly>
+                        </div>
+                        <div class="row">
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="deleteme()">C</button></div>
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator('(')">(</button></div>
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator(')')">)</button></div>
+                            <div class="col-3"><button disabled class="btn btn-block btn-primary my-2" onclick="calculator()">Ruhit</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator('1')">1</button></div>
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator('2')">2</button></div>
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator('3')">3</button></div>
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator('+')">+</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator('4')">4</button></div>
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator('5')">5</button></div>
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator('6')">6</button></div>
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator('-')">-</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator('7')">7</button></div>
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator('8')">8</button></div>
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator('9')">9</button></div>
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator('*')">*</button></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator('.')">.</button></div>
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator('0')">0</button></div>
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="answar()">=</button></div>
+                            <div class="col-3"><button class="btn btn-block btn-primary my-2" onclick="calculator('/')">/</button></div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </div>
+    </section>
+<script src="main.js"></script>
+</body>
+</html>
